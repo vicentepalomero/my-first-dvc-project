@@ -16,7 +16,7 @@ def data_load(config_path: Text) -> None:
 
     dataset.columns = [colname.strip(' (cm)').replace(' ', '_') for colname in dataset.columns.tolist()]
 
-    dataset.to_csv(config['data']['dataset_csv'], index=False)
+    dataset.to_csv(config['data_load']['dataset_csv'], index=False)
 
     print("Data load completed.")
 

@@ -1,7 +1,7 @@
 import argparse
+import pandas as pd
 from typing import Text
 from typing_extensions import Required
-from pandas import pd
 from sklearn.model_selection import train_test_split
 import yaml
 

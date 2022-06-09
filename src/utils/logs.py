@@ -9,6 +9,8 @@ def get_console_handler() -> logging.StreamHandler:
     formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
     console_handler.setFormatter(formatter)
 
+    return console_handler
+
 
 def get_logger(name: Text = __name__, log_level: Union[Text, int] = logging.DEBUG) -> logging.Logger:
 
