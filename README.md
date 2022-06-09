@@ -46,3 +46,14 @@ Use Cookiecutter data sciente template
 pip install cookiecutter
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
+
+## Steps to convert a raw, ugly Notebook into a beautiful file.
+### params.yaml
+* Create a params.yaml file with four categories: base, data, train, reports
+* In the Notebook, import yaml and %cd .. to set the path into the same folder than params.yaml
+* safe_load the params.yaml into a config variable
+* Move the variables into the params.yaml file
+
+### visualization code
+* Copy the code of the function into a src/visualization/visualize.py file (or another similar)
+* change the code in the notebook for a `from src.visualization.visualize import plot_confusion_matrix`
