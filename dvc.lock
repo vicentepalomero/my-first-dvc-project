@@ -119,7 +119,7 @@ stages:
       md5: b5e45593a772fc66629488e1806505c4
       size: 1492
     - path: models/model.joblib
-      md5: fb58085c40471cfa6dadb686730c5904
+      md5: 45380db18e68e582156538f4360f072d
       size: 2668
     - path: src/stages/evaluate.py
       md5: 40d1bea6dc675812b21ff59a4ea6f379
